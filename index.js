@@ -4,7 +4,7 @@ String.prototype.sarcastic = function() {
   return this.split('').reduce((str, char) => {
     str += index % 2 === 0 ? char.toLowerCase() : char.toUpperCase()
 
-    if (char.match(/[a-zA-z0-9]/)) {
+    if (char.match(/[a-zA-z]/)) {
       index++
     }
 
